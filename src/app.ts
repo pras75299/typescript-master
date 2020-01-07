@@ -1,3 +1,5 @@
-const addM = (a: number, b: number) => {
-  return a + b;
-};
+const hobbies = ["Sports", "cooking"];
+const activeHobbies = ["Hiking", ...hobbies];
+
+//activeHobbies.push(hobbies[0], hobbies[1]); //looking cumbersome
+activeHobbies.push(...hobbies);

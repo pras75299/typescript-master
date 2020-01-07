@@ -12,3 +12,12 @@ const personSS = {
 const copiedPerson = { ...personSS }; //with this we have a exact copy of personSS object
 copiedPerson.name = "new Delhi";
 console.log(copiedPerson);
+
+const addRest = (...numbersRest: number[]) => {
+  return numbersRest.reduce((curResult, curValue) => {
+    return curResult + curValue;
+  }, 0);
+};
+
+const addNumbersRest = addRest(1, 2, 3, 4, 5, 6, 7);
+console.log(addNumbersRest);

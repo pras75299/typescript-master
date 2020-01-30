@@ -57,7 +57,10 @@ const v2 = new Truck();
 
 function useVehical(vehical: Vehical) {
   vehical.drive();
-  if ("loadCargo" in vehical) {
+  // if ("loadCargo" in vehical) {
+  //   vehical.loadCargo(1000);
+  // }
+  if (vehical instanceof Truck) {
     vehical.loadCargo(1000);
   }
 }
